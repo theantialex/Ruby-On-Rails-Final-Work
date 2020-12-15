@@ -1,0 +1,85 @@
+<p></p>
+<p></p>
+<div class ="wrap">
+  <div class="mb-3">
+  <h2 class = "title_label"><%=@post.title %></h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm col_label fw-bold">
+      <%=t('Artist')%>
+    </div>
+    <div class="col-sm">
+      <%=@post.artist %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm col_label fw-bold">
+      <%=t('Album')%>
+    </div>
+    <div class="col-sm">
+      <%=@post.album %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm col_label fw-bold">
+      <%=t('Members')%>
+    </div>
+    <div class="col-sm">
+      <%=@post.members %>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col-sm col_label fw-bold">
+      <%=t('Cost')%>
+    </div>
+    <div class="col-sm">
+      <%=@post.cost %>
+    </div>
+  </div>
+
+      <div class="row">
+    <div class="col-sm col_label fw-bold">
+      <%=t('Shipping cost')%>
+    </div>
+    <div class="col-sm">
+      <%=@post.shipping_cost %>
+    </div>
+  </div>
+
+      <div class="row">
+    <div class="col-sm col_label fw-bold">
+      <%=t('Shipping options')%>
+    </div>
+    <div class="col-sm">
+      <%=@post.shipping_options %>
+    </div>
+  </div>
+
+      <div class="row">
+    <div class="col-sm col_label fw-bold">
+      <%=t('Notes & Contact Info')%>
+    </div>
+    <div class="col-sm">
+      <%=@post.notes %>
+    </div>
+  </div>
+
+    <div class="back cap">
+    <%= button_to t('Go to seller page'), :controller => "show", :action => "show" , :email => @post.user %>
+    <%= button_to t('Back'), { :action => "main" }, :method => :get, :class => "mi" %> 
+  
+    <% if @post.user == current_user.email %>
+      <%= button_to t('Edit post'), { :action => "edit" }, :method => :get, :class => "mi" %> 
+    <% end %>
+    </div>
+        
+    </div>
+  </div>
+
+
+</div>
+<p></p>
+<p></p>

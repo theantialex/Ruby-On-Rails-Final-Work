@@ -1,0 +1,29 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark my-nav">
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href= "<%= new_post_path %>">
+            <span class="sr-only"><%=t('Create post')%></span>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-title" href= 'users/edit' >
+                <span class="sr-only"><%=t('Edit profile')%></span>
+              </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-title" href= 'users/sign_out'>
+                <span class="sr-only"><%=t('Log out')%></span>
+            </a>
+        </li>
+        </ul>
+     </div>
+  </nav>
+  
+  <!--/.Navbar-->
+  

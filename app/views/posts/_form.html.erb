@@ -1,0 +1,49 @@
+<%=form_for @post do |form|%>
+<div class ="wrap">
+  <label class="form-label"><%=t('Title')%></label>
+  <div class="input-group mb-3">
+  <%= form.text_field :title, type:"text", class:"form-control" %>
+</div>
+
+<label class="form-label"><%=t('Artist')%></label>
+<div class="input-group mb-3">
+  <%= form.text_field :artist, type:"text", class:"form-control" %>
+</div>
+
+<label class="form-label"><%=t('Album')%></label>
+<div class="input-group mb-3">
+  <%= form.text_field :album, type:"text", class:"form-control" %>
+</div>
+
+<label class="form-label"><%=t('Members')%></label>
+<div class="input-group mb-3">
+  <%= form.text_field :members, type:"text", class:"form-control" %>
+</div>
+
+<label class="form-label"><%=t('Cost')%></label>
+<div class="input-group mb-3">
+  <%= form.text_field :cost, type:"text", class:"form-control" %>
+</div>
+
+<label class="form-label"><%=t('Shipping cost')%></label>
+<div class="input-group mb-3">
+  <%= form.text_field :shipping_cost, type:"text", class:"form-control" %>
+</div>
+
+<label class="form-label"><%=t('Shipping options')%></label>
+<div class="input-group mb-3">
+  <%= form.text_field :shipping_options, type:"text", class:"form-control" %>
+</div>
+
+<label class="form-label"><%=t('Notes & Contact Info')%></label>
+<div class="input-group mb-3">
+  <%= form.text_area :notes, type:"text", class:"form-control" %>
+</div>
+
+<div class="actions">
+    <%= form.submit t('Submit'), class: 'btn btn-primary m-2'  %>
+</div>
+</div>
+<% end %>
+<p></p>
+<p></p>

@@ -1,0 +1,26 @@
+<%=render 'navbar'%>
+<p></p>
+<p id="time" style="font-size:30px"></p>
+
+<a href="https://time.is/Moscow" id="time_is_link" rel="nofollow" style="font-size:30px">Москва:</a>
+<span id="Moscow_z71d" style="font-size:30px"></span>
+<script src="t.js"></script>
+<script>
+  document.getElementById("time").innerHTML = "<%= t('Current time')%>:";
+  time_is_widget.init({Moscow_z71d:{}});
+</script>
+
+
+<%@posts.each do |post| %>
+<div class= "wh">
+<div class="row">
+<div class="col-md-12">
+<div>
+<h2 class=title-post><%= link_to post.title, post_path(post)%></h2>
+<span class="posted"><%=t('Posted')%> <%=post.created_at%></span> <span class="badge alert-danger artist"><%=post.artist%></span><span class="badge alert-warning album"><%=post.album%></span> 
+</div>
+</div>
+</div>
+</div>
+<p></p>
+<% end %>

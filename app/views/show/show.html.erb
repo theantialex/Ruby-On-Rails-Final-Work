@@ -1,0 +1,21 @@
+<p></p>
+<p></p>
+<div class ="wrap_user">
+<div class="row">
+    <h2><%=t('User Profile')%></h2>
+</div>
+<div class="row">
+    <div class="col-sm col_label fw-bold"><%=t('Name')%></div>
+    <div class="col-sm col_label"> <%=@user.name%></div>
+</div>
+<div class="row">
+    <div class="col-sm col_label fw-bold"><%=t('Contact Information')%></div>
+    <div class="col-sm"> <%=@user.email%></div>
+</div>
+<div class="row">
+    <div class="col-sm btr">
+    <%= link_to t('Back'),:back, :class =>"btn btn-primary here"%>
+    </div>
+</div>
+
+</div>
