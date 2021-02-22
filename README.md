@@ -1,24 +1,30 @@
-# README
+Final Project
+=====================
+This project was developed as a final work for “Internet Programming Languages” (Языки интернет-программирования) course. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My project aims to connect fans all over the world in order to help each other with collecting their favourite artist’s photocards. By the means of this web application everybody will be able to create and edit their posts using a convenient template and also look at other fan’s posts to find the ultimate deal for the photocard they’re missing in their collection. 
 
-Things you may want to cover:
+Getting started
+----------------
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+    Ruby 2.7.0
 
-* Configuration
+    Rails 6.0.3.4
 
-* Database creation
+### Installing
 
-* Database initialization
+    git clone https://github.com/theantialex/Ruby-On-Rails-Final-Work.git
+  
+### Running
 
-* How to run the test suite
+    rails s
+Running the tests
+-----------------
+To run automated tests:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    rake test
+Authors
+--------
+Alexandra Volynets – @AntiAlex (Telegram)
