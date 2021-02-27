@@ -27,4 +27,4 @@ To run automated tests:
     rake test
 Authors
 --------
-Alexandra Volynets – @AntiAlex (Telegram)
+Alexandra Volynets – @TheAntiAlex (Telegram)
